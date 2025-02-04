@@ -2,8 +2,8 @@ import { defineConfig } from "vite";
 import { resolve } from "path";
 
 export default defineConfig({
+    base: "/pages-site/",
     build: {
-        base: "/pages-site/",
         outDir: "docs",
         rollupOptions: {
             input: {
