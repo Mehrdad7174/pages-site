@@ -4,7 +4,7 @@ import { resolve } from "path";
 export default defineConfig({
     build: {
         rollupOptions: {
-            base: "pages-site",
+            base: "/pages-site/",
             outDir: "docs",
             input: {
                 main: resolve(__dirname, "index.html"),
