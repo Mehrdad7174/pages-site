@@ -5,17 +5,48 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 50px;
+      }
+      .link-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 20px;
+      }
+      .link-box {
+        padding: 15px 25px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+        width: 250px;
+        text-align: center;
+      }
+      .link-box:hover {
+        background-color: #0056b3;
+      }
+    </style>
   </head>
   <body>
-    Hello
-    <div>
-    <a href="./about/">about page link</a>    
-    <a href="./information/">More Info link</a>
-    <a href="./second-page/">Go to Second-Page</a>
+    <h1>Welcome to My Website</h1>
+    <p>Click on a link below to navigate:</p>
+    
+    <div class="link-container">
+      <a class="link-box" href="./about/">About Page</a>
+      <a class="link-box" href="./information/">More Info</a>
+      <a class="link-box" href="./second-page/">Go to My React App</a>
+      <a class="link-box" href="./to-do-list/">Go to To-Do List</a>
     </div>
   </body>
   <script type="module">
     import _ from "lodash";
-    alert(_.join(["Hello","rollup"], " "))
+    alert(_.join(["Hello", "rollup"], " "));
   </script>
 </html>
