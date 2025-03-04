@@ -13,6 +13,7 @@ export default defineConfig({
                 about: resolve(__dirname, "about/index.html"),
                 information: resolve(__dirname, "information/index.html"),
                 second_page: resolve(__dirname, "second-page/index.html"),
+                to_do_list: resolve(__dirname, "to-do-list/index.html"),
             },
         },
     },
