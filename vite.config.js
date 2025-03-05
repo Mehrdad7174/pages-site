@@ -14,6 +14,7 @@ export default defineConfig({
                 information: resolve(__dirname, "information/index.html"),
                 second_page: resolve(__dirname, "second-page/index.html"),
                 to_do_list: resolve(__dirname, "to-do-list/index.html"),
+                demos: resolve(__dirname, "demos/simple-fetch.html"),
             },
         },
     },
