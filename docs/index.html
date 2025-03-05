@@ -1,70 +1,78 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/pages-site/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        text-align: center;
-        margin: 50px;
-      }
-      .link-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-        margin-top: 20px;
-      }
-      .link-box {
-        padding: 15px 25px;
-        background-color: #007bff;
-        color: white;
-        text-decoration: none;
-        font-size: 18px;
-        border-radius: 8px;
-        transition: background-color 0.3s ease;
-        width: 250px;
-        text-align: center;
-      }
-      .link-box:hover {
-        background-color: #0056b3;
-      }
-      .bottom-button {
-        margin-top: 50px;
-        padding: 10px 20px;
-        background-color: #28a745;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 16px;
-      }
-      .bottom-button:hover {
-        background-color: #218838;
-      }
-    </style>
-    <script type="module" crossorigin src="/pages-site/assets/main-DOvA2oZD.js"></script>
-    <link rel="modulepreload" crossorigin href="/pages-site/assets/modulepreload-polyfill-B5Qt9EMX.js">
-  </head>
-  <body>
-    <h1>Welcome to My Website</h1>
-    <p>Click on a link below to navigate:</p>
-    
-    <div class="link-container">
-      <a class="link-box" href="./about/">About Page</a>
-      <a class="link-box" href="./information/">More Info</a>
-      <a class="link-box" href="./second-page/">Go to My React App</a>
-      <a class="link-box" href="./to-do-list/">Go to To-Do List</a>
-      <a class="link-box" href="./demos/simple-fetch.html">Fetch Page</a>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 50px;
+    }
+    .link-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .link-box {
+      padding: 15px 25px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+      width: 250px;
+      text-align: center;
+    }
+    .link-box:hover {
+      background-color: #0056b3;
+    }
+    .bottom-button {
+      margin-top: 50px;
+      padding: 10px 20px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .bottom-button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to My Website</h1>
+  <p>Click on a link below to navigate</p>
 
-    <button class="bottom-button" id="bottomButton">Bootstrap Bottom</button>
+  <div class="link-container">
+    <a class="link-box" href="./about/">About Page</a>
+    <a class="link-box" href="./information/">More Info</a>
+    <a class="link-box" href="./second-page/">Go to My React App</a>
+    <a class="link-box" href="./to-do-list/">Go to To-Do List</a>
+    <a class="link-box" href="./demos/simple-fetch.html">Fetch Page</a>
+  </div>
 
-    <!-- link to Bootstrap JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
-</html>
+  <button class="bottom-button" id="bottomButton">Bootstrap Bottom</button>
+
+  <script>
+    document.getElementById("bottomButton").addEventListener("click", () => {
+      // Check if Bootstrap is already loaded
+      if (!document.getElementById("bootstrap-css")) {
+        const link = document.createElement("link");
+        link.id = "bootstrap-css";
+        link.rel = "stylesheet";
+        link.href =
+          "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css";
+        document.head.appendChild(link);
+        alert("Bootstrap styles applied!");
+      }
+    });
+  </script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
