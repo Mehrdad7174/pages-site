@@ -5,6 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -32,6 +33,19 @@
       .link-box:hover {
         background-color: #0056b3;
       }
+      .bottom-button {
+        margin-top: 50px;
+        padding: 10px 20px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      .bottom-button:hover {
+        background-color: #218838;
+      }
     </style>
   </head>
   <body>
@@ -44,9 +58,18 @@
       <a class="link-box" href="./second-page/">Go to My React App</a>
       <a class="link-box" href="./to-do-list/">Go to To-Do List</a>
     </div>
+
+    <button class="bottom-button" id="bottomButton">Bootstrap Bottom</button>
+
+    <script type="module">
+      import _ from "lodash";
+      alert(_.join(["Hello", "rollup"], " "));
+
+      document.getElementById('bottomButton').addEventListener('click', () => {
+        alert('Bottom button clicked!');
+      });
+    </script>
+    <!-- link to Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
   </body>
-  <script type="module">
-    import _ from "lodash";
-    alert(_.join(["Hello", "rollup"], " "));
-  </script>
 </html>

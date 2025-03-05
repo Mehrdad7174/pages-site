@@ -5,6 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="/pages-site/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -32,8 +33,21 @@
       .link-box:hover {
         background-color: #0056b3;
       }
+      .bottom-button {
+        margin-top: 50px;
+        padding: 10px 20px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      .bottom-button:hover {
+        background-color: #218838;
+      }
     </style>
-    <script type="module" crossorigin src="/pages-site/assets/main-Bt6L1yis.js"></script>
+    <script type="module" crossorigin src="/pages-site/assets/main-DOvA2oZD.js"></script>
     <link rel="modulepreload" crossorigin href="/pages-site/assets/modulepreload-polyfill-B5Qt9EMX.js">
   </head>
   <body>
@@ -46,5 +60,10 @@
       <a class="link-box" href="./second-page/">Go to My React App</a>
       <a class="link-box" href="./to-do-list/">Go to To-Do List</a>
     </div>
+
+    <button class="bottom-button" id="bottomButton">Bootstrap Bottom</button>
+
+    <!-- link to Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
