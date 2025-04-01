@@ -16,6 +16,7 @@ export default defineConfig({
                 to_do_list: resolve(__dirname, "to-do-list/index.html"),
                 demos: resolve(__dirname, "demos/simple-fetch.html"),
                 local_fetch: resolve(__dirname, "local-fetch/index.html"),
+                game: resolve(__dirname, "game/index.html"),
             },
         },
     },
