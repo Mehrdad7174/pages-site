@@ -5,11 +5,26 @@
     <link rel="icon" type="image/svg+xml" href="/pages-site/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Game</title>
-    <script type="module" crossorigin src="/pages-site/assets/game-1oRnoGgr.js"></script>
-    <link rel="modulepreload" crossorigin href="/pages-site/assets/index-BGfvOPOG.js">
+    <script type="module" crossorigin src="/pages-site/assets/game-B8FSsAez.js"></script>
+    <link rel="modulepreload" crossorigin href="/pages-site/assets/index-Ci3oN4Mi.js">
+    <link rel="stylesheet" crossorigin href="/pages-site/assets/game-DYKSAo0O.css">
   </head>
   <body>
-    <h1>Entertainment</h1>
-    <div id="root"></div>
+    <div>
+      <p>Home Page</p>
+      <a href="../index.html" style="color: aliceblue;">Go to Home</a>
+    </div>
+
+    <div>
+      <h1>Game</h1>
+      <p>Click the button to start the game!</p>
+      <button id="start-game">Start Game</button>
+      <button id="new-game" style="display: none;">New Game</button>
+      <button id="hide-game" style="display: none;">Hide Game</button>
+    </div>
+
+    <!-- React will render inside this div -->
+    <div id="root" style="display: none;"></div>
+
   </body>
 </html>

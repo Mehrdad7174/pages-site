@@ -12,7 +12,7 @@ function LocalFetchDemo() {
                 return response.json();
             })
             .then(data => setNumbers(data))
-            .catch(err => setError("API is not running. Please start the Express server."));
+            .catch(() => setError("API is not running. Please start the Express server."));
     }, []);
 
     return (

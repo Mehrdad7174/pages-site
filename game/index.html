@@ -7,8 +7,47 @@
     <title>Game</title>
   </head>
   <body>
-    <h1>Entertainment</h1>
-    <div id="root"></div>
-    <script type="module" src="./reactRoot.jsx"></script>
+    <div>
+      <p>Home Page</p>
+      <a href="../index.html" style="color: aliceblue;">Go to Home</a>
+    </div>
+
+    <div>
+      <h1>Game</h1>
+      <p>Click the button to start the game!</p>
+      <button id="start-game">Start Game</button>
+      <button id="new-game" style="display: none;">New Game</button>
+      <button id="hide-game" style="display: none;">Hide Game</button>
+    </div>
+
+    <!-- React will render inside this div -->
+    <div id="root" style="display: none;"></div>
+
+    <script type="module">
+      import './reactRoot.jsx';
+
+      const startBtn = document.querySelector('#start-game');
+      const newGameBtn = document.querySelector('#new-game');
+      const hideGameBtn = document.querySelector('#hide-game');
+      const root = document.querySelector('#root');
+
+      startBtn.addEventListener('click', () => {
+        root.style.display = 'block';
+        startBtn.style.display = 'none';
+        newGameBtn.style.display = 'inline-block';
+        hideGameBtn.style.display = 'inline-block';
+      });
+
+      newGameBtn.addEventListener('click', () => {
+        location.reload(); // reload the page to restart the game
+      });
+
+      hideGameBtn.addEventListener('click', () => {
+        root.style.display = 'none';
+        startBtn.style.display = 'inline-block';
+        newGameBtn.style.display = 'none';
+        hideGameBtn.style.display = 'none';
+      });
+    </script>
   </body>
 </html>

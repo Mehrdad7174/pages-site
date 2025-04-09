@@ -50,7 +50,7 @@ function App() {
   }
 
   function downloadTasks() {
-    const markdownContent = tasks.map((task, i) => `- ${task}`).join("\n");
+    const markdownContent = tasks.map((task) => `- ${task}`).join("\n");
     const blob = new Blob([markdownContent], { type: "text/markdown" });
     const link = document.createElement("a");
     link.href = URL.createObjectURL(blob);

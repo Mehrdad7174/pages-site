@@ -1,6 +1,5 @@
 import { createRoot } from "react-dom/client";
 import React, { useState, useEffect } from "react";
-import { values } from "lodash";
 
 const initialItems = [
     { id: 1, name: "Capable", description: "Able to do something effectively and skillfully." },
